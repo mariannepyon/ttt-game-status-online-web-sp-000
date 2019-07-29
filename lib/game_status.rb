@@ -37,6 +37,3 @@ end
 def full?(board)
   board.all? {|i| i == "X" || i == "0"}
 end
-  return true
-end
-end
