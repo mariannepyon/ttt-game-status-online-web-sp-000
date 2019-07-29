@@ -35,5 +35,9 @@ end
 end
 
 def full?(board)
-  board.all? {|i| i == "X" || i == "0"}
+  if board.all? {|i| i == "X" || i == "0"}
+    return false
+  elsif !won?(board) && !full?(board)
+    return true
+  end
 end
