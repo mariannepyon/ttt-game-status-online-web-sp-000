@@ -35,6 +35,5 @@ end
 end
 
 def full?(board)
-  board.all.each do {|i| i == "X" || i == "0"}
-end
+  board.all? {|i| i == "X" || i == "0"}
 end
